@@ -11,7 +11,7 @@ let getWeather = () => {
   }
   //If input field is NOT empty
   else {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=${key}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`;
     //Clear the input field
     cityRef.value = "";
     fetch(url)
